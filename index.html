@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanda</title>
+    <!-- talwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- header sec -->
+    <header class="container mx-auto">
+        <section class="flex justify-between items-center bg-green-600">
+            <div class="   ml-4">
+               <img src="./image/logo.png" class=" h-20 w-20 ml-4 p-2 hover:bg-red-900">
+            </div>
+            <div class=" p-4">
+               <ul>
+                   <li class="">
+                      <a href="" class="ml-2 px-2 text-yellow-300 hover:bg-blue-700">Home</a>
+                      <a href="" class="ml-2 text-yellow-300">Contuct Us</a>
+                      <a href="" class="ml-2 text-yellow-300">Contuct Us</a>
+                      <a href="" class="ml-2 text-yellow-300">Contuct Us</a>
+                   </li>
+               </ul>
+            </div>
+       
+           </section>
+    </header>
+    <!-- banner sec -->
+   <main class=" pb-8 pt-6">
+    <section class=" container mx-auto sm:flex justify-around items-center bg-yellow-200">
+        <div>
+            <h1 class="text-5xl uppercase font-semibold ml-4">
+                <span class="text-yellow-400">Be the penguin</span>
+                <p class="text-emerald-400">of Winter</p>
+            </h1>
+            <button class="bg-lime-600 m-4 px-5 py-4 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                BUY NOW
+            </button>
+        </div>
+        <div class="px-3 sm:px-0 sm:w-1/2">
+            <img src="./image/cover2.jpg" class="pt-5">
+        </div>
+    </section>
+<!-- card -->
+    <section>
+      <h4 class="text-6xl m-9 text-cyan-700 text-center">Cards...</h4>
+      <div>
+        <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
+          <div>
+            <img src="./image/cover2.jpg" alt="" loading="lazy">
+          </div>
+          <div class="col-start-3">
+            <img src="./image/cover2.jpg" alt="" loading="lazy">
+          </div>
+          <div>
+            <img src="./image/cover2.jpg"alt="" loading="lazy">
+          </div>
+          <div>
+            <img src="./image/cover2.jpg" alt="" loading="lazy">
+          </div>
+          <div class="row-start-1 col-start-2 col-span-2">
+            <img src="./image/cover2.jpg" alt="" loading="lazy">
+          </div>
+        </div>
+        
+        
+      </div>
+    </section>
+    <section>
+      <h4 class="text-6xl m-9 text-cyan-700 text-center">Cards...</h4>
+      <div>
+        <div class="sm:grid sm:grid-cols-3 gap-2 m-10 ">
+          <div class="shadow-2xl bg-dark rounded-lg p-10 my-5 bg-yellow-200">
+            <img src="./image/cover2.jpg" alt="" loading="lazy">
+            <div class="text-red-800 text-center">
+              <h2>Card one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+            </div>
+          </div>
+          
+          <div>
+            <img src="./image/cover2.jpg"alt="" loading="lazy">
+          </div>
+          <div>
+            <img src="./image/cover2.jpg" alt="" loading="lazy">
+          </div>
+          
+        </div>
+        
+        
+      </div>
+    </section>
+  <!-- carusol -->
+    <section class="bg-slate-600 m-6">
+      
+<div id="animation-carousel" class="relative w-full" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+       <!-- Item 1 -->
+      <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="./image/cover3.jpg" alt="hhh" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-200 ease-linear" data-carousel-item>
+          <img src="./image/cover3.jpg" alt="hhh" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+          <img src="./image/cover3.jpg" alt="hhh" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+     
+      
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+</div>
+
+    </section>
+   </main>
+    
+</body>
+</html>
+Tailwind CSS Carousel - Flowbite https://flowbite.com/docs/components/carousel/
